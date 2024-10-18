@@ -1,0 +1,22 @@
+Welcome to Auditora!
+
+Hello and welcome to Auditora, your go-to platform for easy and efficient auditorium booking at VIT Bhopal University!
+
+We are thrilled to have you here and excited to introduce you to our project, developed by a dedicated team of students under the supervision of Dr. Rajneesh Kumar Patel. Our mission is to create a user-friendly experience that simplifies the process of booking the university auditorium for events organized by various clubs and organizations.
+
+What You Can Expect:
+- **Seamless Booking:** Our platform makes it easy for you to reserve the auditorium for your events with just a few clicks.
+- **Enhanced Communication:** Stay connected with your peers and our team to ensure everything runs smoothly for your events.
+- **Efficient Management:** Our system is designed to help you utilize the university's auditorium facilities effectively.
+
+Meet the Team:
+- Dr. Rajneesh Kumar Patel (Supervisor)
+- Giriraj Pradeep Parsewar
+- Prashasti Priya
+
+We are committed to continuously improving our services to make your event planning experience enjoyable and hassle-free. Explore the platform, and let us know how we can assist you in making your events a success!
+
+Thank you for choosing Auditora. We look forward to supporting your events and enhancing the vibrant campus community at VIT Bhopal University.
+
+Best regards,
+The Auditora Team
