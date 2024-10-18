@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>VIT Bhopal Auditorium Booking Portal</title>
+    <link rel="stylesheet" href="newaudit.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+ <script>
+    
+ </script>
+
+
+</head>
+<body>
+    
+<div class="banner">
+   
+    <div class="navbar">
+       
+        
+        <div class="logo">
+            <img src="Screenshot 2023-10-23 010013.ico" alt="Auditora" />
+            <h4>Auditora</h4>
+          </div>
+         <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="gallery3.0.html" id="galleryLink">Gallery</a></li>
+            <li><a href="#">Event Calendar</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <button id="loginButton">Login</button>
+
+        </ul>
+        <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+        <span class="close-btn material-symbols-rounded">close</span>
+        <div class="form-box login" id="loginForm">
+            <div class="form-details">
+                <h2>Welcome Back</h2>
+                <p>Please log in using your personal information to stay connected with us.</p>
+            </div>
+            <div class="form-content">
+                <h2>LOGIN</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" id="username" name="username" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="email" name="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="password" name="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="input-field">
+                        <label for="type"></label>
+                        <select id="type" name="type" required>
+                        <option value="0">Club</option>
+                        <option value="1">DSW</option>
+                        </select><br><br>
+                    </div>
+                    <a href="#" class="forgot-pass-link">Forgot password?</a>
+                    <button type="submit">Log In</button>
+                </form>
+                <div class="bottom-link">
+                    Don't have an account?
+                    <a href="#" id="signup-link">Signup</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-box signup">
+            <div class="form-details">
+                <h2>Create Account</h2>
+                <p>To become a part of our community, please sign up using your personal information.</p>
+            </div>
+            <div class="form-content">
+                <h2>SIGNUP</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" id="username" name="username" required>
+                        <label>Create Username</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Enter your email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Create password</label>
+                    </div>
+                    <div class="input-field">
+                        <label for="type"></label>
+                        <select id="type" name="type" required>
+                        <option value="0">Club</option>
+                        <option value="1">DSW</option>
+                        </select><br><br>
+                    </div>
+                    
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">
+                            I agree the
+                            <a href="#" class="option">Terms & Conditions</a>
+                        </label>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <div class="bottom-link">
+                    Already have an account? 
+                    <a href="#" id="login-link">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    
+  
+    </div>
+    <section>
+        
+  <!--<div class="wrapper">
+        <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+        <div class="form-box login">
+        <h2>Login</h2>
+        <form action="#">
+        <div class="input-box">
+        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+        <input type="email" required>
+        <label>Email</label>
+        </div>
+        <div class="input-box">
+        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+        <input type="password" required>
+        <label>Password</label>
+        </div>
+        <div class="remember-forgot">
+            <label><input type="checkbox">Remember me</label>
+            <a href="#">Forgot Password?</a>
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <div class="login-registraion"></div>
+        <p>Dont have an account?<a href="#" class="register-link">Register</a></p>
+        </form>
+    </div>
+    <div class="form-box register">
+        <h2>Register</h2>
+        <form action="#">
+        <div class="input-box">
+        <span class="icon"><ion-icon name="person"></ion-icon></span>
+        <input type="text" required>
+        <label>Username</label>
+        </div>
+        <div class="input-box">
+        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+        <input type="password" required>
+        <label>Password</label>
+        </div>
+        <div class="remember-forgot">
+            <label><input type="checkbox">Remember me</label>
+            <a href="#">Forgot Password?</a>
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <div class="login-registraion"></div>
+        <p>Dont have an account?<a href="#" class="register-link">Register</a></p>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>-->
+
+   
+   </nav>
+    <div class="content">
+        <div class="card">
+            <h1>Auditora</h1>
+              <p>Welcome to Vitbhopal University’s Auditorium Booking Portal,<br style="padding: top 1px;">  
+                your one-stop solution for planning and reserving events on
+                our stunning Auditorium.</p>
+            <div>
+                <button type="button">Learn More</button>
+                <button type="button">Book Auditorium</button>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+
+<section class="course">
+    <h1 style="color: #fff; font-size: 35px;">Auditorium Ammenities</h1>
+    <p style="color: #fff;">Discover the perfect space for your event at vitbhopal auditorium portal. <br>State-of-the-art technology, comfortable seating, and a dedicated team ensure a seamless experience from booking to execution.</p>
+    <div class="row">
+    <div class="course-col">
+    <h3 style="font-size: 28px;">Stage</h3>
+    <p>Our stage is the ultimate platform for dynamic presentations and performances.Equipped with dynamic lighting to crystal-clear sound transforming your event into an unforgettable showcase of ideas and talent.</p>
+    </div> 
+    <div class="course-col">
+        <h3 style="font-size: 28px;">Podium</h3>
+        <p>Our podium is your power hub, complete with advanced audio and visual tools to elevate your presence and engage your audience with ease.</p>
+    </div>
+     <div class="course-col">
+            <h3 style="font-size: 28px;">Audiovisual Equipment</h3>
+            <p>We offer technical gears for events booked in our auditorium. Our Auditorium is equipped with advanced Audio and Visual setup helping you to conduct a hassle free event.</p>
+    </div>
+    </div>
+</section>
+<section class="cta">
+    <h1>Feel free to get in touch with us or provide feedback.<br> We value your input and are here to assist you.</h1>
+    <a href="contact_us.html" class="hero-btn">Contact Us</a>
+
+<a href="feedback.html" class="hero-btn">Feedback Form</a>
+
+
+    </section> 
+    
+
+  <!--<section>
+        <div class="slide hi-slide">
+         <div class="hi-prev"></div>
+         <div class="hi-next"></div>
+         <u1>
+            <l1><img src="image1.jpg" alt=""></l1>
+            <l1><img src="image2.jpg" alt=""></l1> 
+            <l1><img src="image3.jpg" alt=""></l1> 
+            
+         </u1>
+</div>
+
+   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+   <script src="jquery.hislide.js"></script>
+   <script>
+    $('.slide').hislide(); 
+   </script>
+    </section>-->
+   
+<section class="footer">
+<h4>About Us</h4>
+<p>We are a dedicated team working to provide a user-friendly platform <br> for our university's clubs organizations to book the auditorium for their events.<br> Our goal is to streamline the reservation process and ensure a seamless experience for our users.</p>
+<div class="icons">
+<ion-icon name="logo-facebook"></ion-icon>
+<ion-icon name="logo-twitter"></ion-icon>
+<ion-icon name="logo-instagram"></ion-icon>
+<ion-icon name="logo-linkedin"></ion-icon>
+</div>
+<p>Made by team Auditora</p>
+</section>
+<!-- <p id="message"></p>
+    <script>
+        // JavaScript code to handle the login form submission
+        document.getElementById("loginForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            // Retrieve form values
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var type = document.getElementById("type").value;
+
+            var database = [
+                { username: "22BCE10737", password: "#123re$", type:0 },
+                { username: "22BCE10681", password: "12rty", type:0},
+                { username: "100504", password: "#456re", type:1 }
+                ];
+
+            // Check if the entered username and password match the database data
+            var user = database.find(function (user) {
+                return user.username === username && user.password === password;
+            });
+            if (username && password && type){
+            if (user) {
+                
+                document.getElementById("message").textContent = "Login successful!";
+                alert("Login successful!");
+
+                var userData = {
+                        user_password: user.password, 
+                        userType: parseInt(type),
+                        username: user.username
+                    };
+
+                    // Store user data in localStorage for future use
+                    localStorage.setItem("userData", JSON.stringify(userData));
+
+                switch (parseInt(type)) {
+                    case 0:
+                        window.location.href = "applicant.html";
+                        break;
+                    case 1:
+                        window.location.href = "authority(booking approval).html";
+                        break;
+                    
+                    default:
+                        window.location.href = "#login-link";
+                        break;
+                }
+            }
+             else {
+                
+                document.getElementById("message").textContent = "Login failed. Invalid username or password.";
+                alert("Login failed. Invalid username or password.");
+            }
+        }
+        else {
+                alert("Please fill in all fields.");
+            }
+    
+           
+        });
+    </script> -->
+<script>
+document.getElementById("loginButton").addEventListener("click", function() {
+    // Add a class to trigger an animation
+    this.classList.add("clicked");
+    
+    // Redirect to the login page after a short delay (for the animation to play)
+    setTimeout(() => {
+        window.location.href = "responsivelogin.html";
+    }, 300); // Change the time delay as needed
+});
+
+</script>
+</body>
+
+</html>
